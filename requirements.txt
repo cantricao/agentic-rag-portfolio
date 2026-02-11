@@ -1,0 +1,5 @@
+# Core dependencies for Agentic RAG Application
+langchain>=0.1.0
+langgraph>=0.0.20
+chromadb>=0.4.0
+google-generativeai>=0.3.0
