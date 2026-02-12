@@ -1,0 +1,6 @@
+langchain
+langgraph
+chromadb
+openai
+pypdf
+python-dotenv
