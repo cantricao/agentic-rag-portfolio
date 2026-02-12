@@ -37,7 +37,7 @@ The system follows a cyclic graph workflow:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/agentic-rag-portfolio.git](https://github.com/your-username/agentic-rag-portfolio.git)
+    git clone [https://github.com/cantricao/agentic-rag-portfolio.git](https://github.com/cantricao/agentic-rag-portfolio.git)
     cd agentic-rag-portfolio
     ```
 
@@ -49,7 +49,7 @@ The system follows a cyclic graph workflow:
 3.  **Set up Environment Variables:**
     Create a `.env` file and add your API keys:
     ```env
-    OPENAI_API_KEY=your_openai_key
+    GEMINI_API_KEY=your_gemini_key
     TAVILY_API_KEY=your_tavily_key
     LANGCHAIN_API_KEY=your_langsmith_key  # Optional for tracing
     ```
