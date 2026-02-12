@@ -16,17 +16,18 @@ The system is built with **LangGraph** for stateful orchestration and uses **Chr
 * **📚 Advanced RAG:** Implements semantic search over unstructured data (PDFs/Text) using **ChromaDB** vector storage.
 * **🌐 Hybrid Information Retrieval:**
     * *Internal Knowledge:* Queries local vector database for proprietary data.
-    * *External Knowledge:* Fallback to Web Search (via Tavily/DuckDuck) when internal data is insufficient.
-* **💾 Long-term Memory (Experimental):** Integrated **Mem0** to retain user context across different conversation sessions.
+    * *External Knowledge:* Fallback to Web Search when internal data is insufficient.
+    * *Function Calling:* Call tools in pre-defined cases.
+* **💾 Long-term Memory:** Integrated Mem0 for persistent, long-term user context retention (personalized patient history).
 * **🗣️ Voice Interface (Optional):** Modular support for **VoxCPM** for Vietnamese Voice Cloning and Text-to-Speech (TTS).
 
 ## 🛠️ Tech Stack
 
 * **Core Framework:** Python, LangChain, LangGraph
-* **LLM:** Google Gemini (Configurable)
+* **LLM:** Google Gemini and Grod (Configurable)
 * **Vector Database:** ChromaDB
-* **Tools:** Tavily Search API (for web browsing), Python REPL (for math/logic)
-* **Environment:** Google Colab / Local Python 3.10+
+* **Tools:** Python REPL (for math/logic)
+* **Environment:** Google Colab
 
 ## ⚙️ Architecture
 
@@ -50,7 +51,6 @@ The system follows a cyclic graph workflow:
     Create a `.env` file and add your API keys:
     ```env
     GEMINI_API_KEY=your_gemini_key
-    TAVILY_API_KEY=your_tavily_key
     LANGCHAIN_API_KEY=your_langsmith_key  # Optional for tracing
     ```
 
